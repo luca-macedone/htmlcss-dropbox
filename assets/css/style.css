@@ -131,6 +131,10 @@ body {
 .debug #clients .col-12 {
     height: 300px;
 }
+
+.debug #questions {
+    height: 400px;
+}
 /* #endregion debug */
 
 /* #region utilities */
