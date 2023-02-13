@@ -119,6 +119,18 @@ body {
 .debug #business_banner {
     height: 200px;
 }
+
+.debug #clients {
+    height: 900px;
+}
+
+.debug #clients .col-4 {
+   height: 600px;
+}
+
+.debug #clients .col-12 {
+    height: 300px;
+}
 /* #endregion debug */
 
 /* #region utilities */
@@ -171,6 +183,11 @@ body {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
+
+.margin-y-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 /* #endregion utilities */
 
 /* #region main */
@@ -192,6 +209,10 @@ body {
 
 #plans .col-12 .row .col-4 {
     padding:  1rem;
+}
+
+#clients {
+    background-color: var(--c-secondary);
 }
 
 /* #endregion app_main */
