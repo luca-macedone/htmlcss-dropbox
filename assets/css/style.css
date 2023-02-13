@@ -111,6 +111,10 @@ body {
 .debug #banner_meet_partners {
     height: 30vh;
 }
+
+.debug #functionalities {
+    height: 60vh;
+}
 /* #endregion debug */
 
 /* #region utilities */
