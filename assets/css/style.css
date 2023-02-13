@@ -135,6 +135,22 @@ body {
 .debug #questions {
     height: 400px;
 }
+
+.debug #app_footer {
+    height: 500px;
+}
+
+.debug #app_footer .row {
+    border: 2px solid wheat;
+}
+
+.debug #app_footer .row:first-child {
+    height: 350px;
+}
+
+.debug #app_footer .row:last-child {
+    height: 150px;
+}
 /* #endregion debug */
 
 /* #region utilities */
@@ -218,11 +234,12 @@ body {
 #clients {
     background-color: var(--c-secondary);
 }
-
 /* #endregion app_main */
 
 /* #region app_footer */
-
+#app_footer {
+    background-color: var(--c-dark);
+}
 /* #endregion app_footer */
 
 /* #endregion main */
