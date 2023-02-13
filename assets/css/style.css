@@ -93,27 +93,31 @@ body {
 }
 
 .debug #jumbotron {
-    height: 30vh;
-}
-
-.debug #plans {
-    min-height: 60vh;
+    height: 400px;
 }
 
 .debug #plans .col-12 .row .col-4 {
-    height: 60vh;
+    height: 600px;
 }
 
 .debug #plans .col-12 .row .col-12 {
-    height: 20vh;
+    height: 200px;
 }
 
 .debug #banner_meet_partners {
-    height: 30vh;
+    height: 400px;
 }
 
 .debug #functionalities {
-    height: 60vh;
+    height: 800px;
+}
+
+.debug #functionalities .col-4 {
+    height: 400px;
+}
+
+.debug #business_banner {
+    height: 200px;
 }
 /* #endregion debug */
 
