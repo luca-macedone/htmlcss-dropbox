@@ -80,6 +80,12 @@ body {
     border: 2px dashed black;
 }
 
+.debug .col-8 {
+    height: 100%;
+    background-color: palegoldenrod;
+    border: 2px dashed black;
+}
+
 .debug .col-12 {
     height: 100%;
     background-color: paleturquoise;
@@ -100,6 +106,10 @@ body {
 
 .debug #plans .col-12 .row .col-12 {
     height: 20vh;
+}
+
+.debug #banner_meet_partners {
+    height: 30vh;
 }
 /* #endregion debug */
 
@@ -137,6 +147,10 @@ body {
     width: calc(100% / 12 * 6);
 }
 
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
 .col-12 {
     width: 100%;
 }
@@ -167,6 +181,7 @@ body {
 #plans .col-12 .row .col-4 {
     padding:  1rem;
 }
+
 /* #endregion app_main */
 
 /* #region app_footer */
