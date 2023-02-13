@@ -161,7 +161,7 @@ body {
 }
 
 .container-med {
-    width: 84%;
+    width: 80%;
     max-width: 1080px;
     margin: auto;
 }
@@ -221,6 +221,18 @@ body {
     list-style: none;
 }
 
+.text-black {
+    font-weight: 900;
+}
+
+.text-bold {
+    font-weight: 800;
+}
+
+.text-regular {
+    font-weight: 400;
+}
+
 .text-sml {
     font-size: .8rem;
 }
@@ -234,7 +246,7 @@ body {
 }
 
 .text-bigger {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .color-dark {
@@ -282,6 +294,27 @@ body {
 /* #region app_main */
 #jumbotron {
     background-color: var(--c-secondary);
+    position: relative;
+    padding: 1rem 1rem 0;
+}
+
+#jumbo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#jumbo-content i {
+    margin-top: 1rem;
+}
+
+.jumbo_img {
+    width: 660px;
+    position: absolute;
+    bottom: -3.2rem;
+    right: 2rem;
 }
 
 #plans .col-12 .row .col-4 {
