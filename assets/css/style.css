@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+/* #region common */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Fonts */
+    --ff-opensans: 'Open Sans', sans-serif;
+    /* Colors */
+    --c-dark: #000101;
+    --c-dark: #000101;
+    --c-lighter: #fefffe;
+    --c-light: #fefaf3;
+    --c-primary: #0062fe;
+    --c-secondary: #add0eb;
+    --c-special: #6a012b;
+    /* Brand Colors */
+    --cb-designit-a: #95d495;
+    --cb-designit-b: #cbebcb;
+    --cb-designit-c: #f4f5f4;
+    --cb-florida_uni: #0197d4;
+    --cb-arizona_uni: #6a012b;
+    --cb-topps: #fe0001;
+    --cb-world_bicycle_relief: #e80006;
+    --cb-lonely_planet: #032586;
+    --cb-hearst_corporation: #acd1e8;
+    --cb-clear_channel_outdoor: #ffd600;
+}
+
+body {
+    font-family: var(--ff-opensans);
+}
+
+/* #endregion common */
+
+/* #region debug */
+
+/* #endregion debug */
+
+/* #region utilities */
+
+/* #endregion utilities */
+
+/* #region main */
+
+/* #endregion main */
