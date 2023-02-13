@@ -68,10 +68,38 @@ body {
     background-color: orangered;
 }
 
+.debug .col-4 {
+    height: 100%;
+    background-color: palevioletred;
+    border: 2px dashed black;
+}
+
 .debug .col-6 {
     height: 100%;
     background-color: palegreen;
     border: 2px dashed black;
+}
+
+.debug .col-12 {
+    height: 100%;
+    background-color: paleturquoise;
+    border: 2px dashed black;
+}
+
+.debug #jumbotron {
+    height: 30vh;
+}
+
+.debug #plans {
+    min-height: 60vh;
+}
+
+.debug #plans .col-12 .row .col-4 {
+    height: 60vh;
+}
+
+.debug #plans .col-12 .row .col-12 {
+    height: 20vh;
 }
 /* #endregion debug */
 
@@ -98,10 +126,28 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
 }
 
 .col-6 {
     width: calc(100% / 12 * 6);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.padding-top-4 {
+    padding-top: 4rem;
+}
+
+.padding-y-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 /* #endregion utilities */
 
@@ -114,7 +160,13 @@ body {
 /* #endregion app_header */
 
 /* #region app_main */
+#jumbotron {
+    background-color: var(--c-secondary);
+}
 
+#plans .col-12 .row .col-4 {
+    padding:  1rem;
+}
 /* #endregion app_main */
 
 /* #region app_footer */
