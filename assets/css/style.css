@@ -39,13 +39,86 @@ body {
 /* #endregion common */
 
 /* #region debug */
+.debug #app_header {
+    height: 3.5rem;
+    width: 100%;
+    border: 2px solid black;
+}
 
+.debug .container-sml {
+    height: 100%;
+    background-color: green;
+    border: 2px dashed white;
+}
+
+.debug .container-med {
+    height: 100%;
+    background-color: red;
+    border: 2px dashed white;
+}
+
+.debug .container-big {
+    height: 100%;
+    background-color: blue;
+    border: 2px dashed white;
+}
+
+.debug .row {
+    height: 100%;
+    background-color: orangered;
+}
+
+.debug .col-6 {
+    height: 100%;
+    background-color: palegreen;
+    border: 2px dashed black;
+}
 /* #endregion debug */
 
 /* #region utilities */
+.container-sml {
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+}
 
+.container-med {
+    width: 84%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.container-big {
+    width: 96%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
 /* #endregion utilities */
 
 /* #region main */
+
+/* #region app_header */
+#app_header {
+    background-color: var(--c-lighter);
+}
+/* #endregion app_header */
+
+/* #region app_main */
+
+/* #endregion app_main */
+
+/* #region app_footer */
+
+/* #endregion app_footer */
 
 /* #endregion main */
