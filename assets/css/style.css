@@ -216,6 +216,11 @@ img {
     padding-bottom: 2rem;
 }
 
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .my-2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -264,6 +269,10 @@ img {
 
 .color-dark {
     color: var(--c-dark);
+}
+
+.color-lighter {
+    color: var(--c-lighter);
 }
 
 .color-primary {
@@ -350,6 +359,7 @@ img {
 .visible {
     display: inline-block;
 }
+
 /* #endregion utilities */
 
 /* #region main */
@@ -741,6 +751,36 @@ img {
 /* #region app_footer */
 #app_footer {
     background-color: var(--c-dark);
+}
+
+#app_footer .horizontal-line {
+    width: 10%;
+}
+
+#app_footer .column {
+    width: calc(100% / 5);
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+#app_footer .column li {
+    margin: .8rem 0;
+}
+
+#app_footer .column h5 {
+    margin-bottom: 1.6rem;
+}
+
+#app_footer .col-12 {
+    margin: 2rem 0;
+}
+
+#app_footer .col-12 i:first-child {
+    margin-right: .5rem;
+}
+
+#app_footer .col-12 i:last-child {
+    margin-left: .5rem;
 }
 /* #endregion app_footer */
 
