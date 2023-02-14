@@ -158,6 +158,34 @@ img {
 /* #endregion debug */
 
 /* #region utilities */
+
+.horizontal-line {
+    width: 30%;
+    border-bottom: 2px solid var(--c-shadow);
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}
+
+.list-unstiled {
+    list-style: none;
+}
+
+.inverted {
+    filter: invert(1);
+}
+
+.no-decor{
+    text-decoration: none;
+}
+
+/* #region containers_and_boxes */
+
 .container-sml {
     width: 74%;
     max-width: 900px;
@@ -199,6 +227,10 @@ img {
     width: 100%;
 }
 
+/* #endregion containers_and_boxes */
+
+/* #region flex */
+
 .flex-end-main {
     justify-content: flex-end;
 }
@@ -206,6 +238,10 @@ img {
 .flex-start-main {
     justify-content: flex-start;
 }
+
+/* #endregion flex */
+
+/* #region margin_and_padding */
 
 .padding-top-4 {
     padding-top: 4rem;
@@ -231,9 +267,9 @@ img {
     margin-bottom: 4rem;
 }
 
-.list-unstiled {
-    list-style: none;
-}
+/* #endregion margin_and_padding */
+
+/* #region font_manipulation */
 
 .text-black {
     font-weight: 900;
@@ -266,6 +302,10 @@ img {
 .text-biggest {
     font-size: 2.5rem;
 }
+
+/* #endregion font_manipulation */
+
+/* #region colors */
 
 .color-dark {
     color: var(--c-dark);
@@ -312,13 +352,9 @@ img {
     background-color: var(--cb-clear_channel_outdoor);
 }
 
-.inverted {
-    filter: invert(1);
-}
+/* #endregion colors */
 
-.no-decor{
-    text-decoration: none;
-}
+/* #region buttons */
 
 .primary-btn {
     color: var(--c-lighter);
@@ -347,18 +383,7 @@ img {
     cursor: pointer;
 }
 
-.horizontal-line {
-    width: 30%;
-    border-bottom: 2px solid var(--c-shadow);
-}
-
-.invisible {
-    display: none;
-}
-
-.visible {
-    display: inline-block;
-}
+/* #endregion buttons */
 
 /* #endregion utilities */
 
@@ -399,7 +424,7 @@ img {
 #jumbo-content {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
     align-items: flex-start;
 }
@@ -409,9 +434,9 @@ img {
 }
 
 .jumbo_img {
-    width: 660px;
+    /* width: 660px; */
     position: relative;
-    bottom: -5rem;
+    bottom: -4.5rem;
     right: 0;
 }
 
@@ -480,8 +505,8 @@ img {
     flex-direction: column;
 }
 
-#plans .card-main ul,
-#plans .card-footer ul 
+#plans .col-4 .card-main ul,
+#plans .col-4 .card-footer ul 
 {
     flex-grow: 2;
 
