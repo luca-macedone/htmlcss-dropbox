@@ -342,6 +342,14 @@ img {
     width: 30%;
     border-bottom: 2px solid var(--c-shadow);
 }
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}
 /* #endregion utilities */
 
 /* #region main */
@@ -683,6 +691,50 @@ img {
     padding-right: 2rem;
 }
 /* #endregion clients */
+
+/* #region questions */
+
+#questions {
+    margin: 5rem;
+}
+
+#questions h2 {
+    margin-bottom: 2.5rem;
+}
+
+#questions .question {
+    cursor: pointer;
+}
+
+#questions .question strong {
+    padding: 1rem 0;
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+}
+
+#questions .question span {
+    margin-right: 2rem;
+}
+
+#questions .question p {
+    width: 80%;
+}
+
+#questions .horizontal-line {
+    width: 100%;
+    border: 1px solid var(--c-shadow);
+    margin: 1rem 0;
+}
+
+#questions .question:hover .invisible {
+    display: inline-block;
+}
+
+#questions .question:hover .visible {
+    display: none;
+}
+/* #endregion questions */
 
 /* #endregion app_main */
 
