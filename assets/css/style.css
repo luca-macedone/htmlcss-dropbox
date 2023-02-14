@@ -270,6 +270,43 @@ img {
     color: var(--c-primary);
 }
 
+.color-special {
+    color: var(--c-special);
+}
+
+.bg-b-designit-a {
+    background-color: var(--cb-designit-a);
+}
+.bg-b-asu {
+    background-color: var(--cb-arizona_uni);
+}
+.bg-b-fu {
+    background-color: var(--cb-florida_uni);
+}
+.bg-b-topps {
+    background-color: var(--cb-topps);
+}
+
+.bg-b-bycicle {
+    background-color: var(--cb-world_bicycle_relief);
+}
+
+.bg-b-hearst {
+    background-color: var(--cb-hearst_corporation);
+}
+
+.bg-b-lonelyp {
+    background-color: var(--cb-lonely_planet);
+}
+
+.bg-b-clearc {
+    background-color: var(--cb-clear_channel_outdoor);
+}
+
+.inverted {
+    filter: invert(1);
+}
+
 .no-decor{
     text-decoration: none;
 }
@@ -290,6 +327,20 @@ img {
     padding: .5rem 1rem;
     font-family: var(--ff-opensans);
     cursor: pointer;
+}
+
+.light-btn {
+    color: var(--c-dark);
+    background-color: var(--c-lighter);
+    border: none;
+    padding: .5rem 1rem;
+    font-family: var(--ff-opensans);
+    cursor: pointer;
+}
+
+.horizontal-line {
+    width: 30%;
+    border-bottom: 2px solid var(--c-shadow);
 }
 /* #endregion utilities */
 
@@ -452,14 +503,8 @@ img {
     padding-bottom: .5rem;
 }
 
-#plans .card hr {
-    width: 30%;
-
+#plans .card .horizontal-line {
     margin-left: 1.5rem;
-
-    border: 0;
-    border-bottom: 2px solid var(--c-shadow);
-
 }
 
 #plans .card-footer {
@@ -569,9 +614,76 @@ img {
 
 /* #endregion business_banner */
 
+/* #region clients */
+
 #clients {
     background-color: var(--c-secondary);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
+
+
+#clients .col-4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#clients .client {
+    padding: 2rem;
+    background-color: var(--cb-designit-c);
+    color: var(--c-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.client .brand-logo {
+    margin-bottom: 1rem;
+}
+
+.client .horizontal-line {
+    width: 20%;
+    border-bottom: 1px solid var(--c-dark);
+}
+
+#clients .brand-box {
+    width: 50%;
+    aspect-ratio: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients .brand-logo {
+    width: 42%;
+}
+
+#clients .call-to-business {
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+#clients .call-to-business h2 {
+    width: 30%;
+}
+
+#clients .call-to-business button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/* #endregion clients */
+
 /* #endregion app_main */
 
 /* #region app_footer */
