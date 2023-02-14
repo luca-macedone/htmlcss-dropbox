@@ -19,6 +19,7 @@
     --c-primary: #0062fe;
     --c-secondary: #add0eb;
     --c-special: #6a012b;
+    --c-shadow: #ecedee;
     /* Brand Colors */
     --cb-designit-a: #95d495;
     --cb-designit-b: #cbebcb;
@@ -155,7 +156,7 @@ body {
 
 /* #region utilities */
 .container-sml {
-    width: 70%;
+    width: 74%;
     max-width: 900px;
     margin: auto;
 }
@@ -212,9 +213,14 @@ body {
     padding-bottom: 2rem;
 }
 
-.margin-y-2 {
+.my-2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.my-4 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .list-unstiled {
@@ -253,6 +259,10 @@ body {
     color: var(--c-dark);
 }
 
+.color-primary {
+    color: var(--c-primary);
+}
+
 .no-decor{
     text-decoration: none;
 }
@@ -261,7 +271,7 @@ body {
     color: var(--c-lighter);
     background-color: var(--c-primary);
     border: none;
-    padding: .25rem .75rem;
+    padding: .5rem 1rem;
     font-family: var(--ff-opensans);
 }
 /* #endregion utilities */
@@ -292,9 +302,11 @@ body {
 /* #endregion app_header */
 
 /* #region app_main */
+
+/* #region jumbotron */
+
 #jumbotron {
     background-color: var(--c-secondary);
-    position: relative;
     padding: 1rem 1rem 0;
 }
 
@@ -312,14 +324,171 @@ body {
 
 .jumbo_img {
     width: 660px;
-    position: absolute;
-    bottom: -3.2rem;
-    right: 2rem;
+    position: relative;
+    bottom: -5rem;
+    right: 0;
 }
 
-#plans .col-12 .row .col-4 {
-    padding:  1rem;
+
+/* #endregion jumbotron */
+
+/* #region plans */
+
+.billing_choice {
+    padding: 2rem 1rem 2rem 0;
 }
+
+.billing_choice input {
+    vertical-align: middle;
+}
+
+.billing_choice label {
+    margin-left: .25rem;
+}
+
+#plans .col-4 {
+    padding: 1rem;
+}
+
+#plans .col-4:first-child 
+{
+    margin-left: -1rem;
+}
+
+#plans .col-4:last-child
+{
+    margin-right: -1rem;
+}
+
+#plans .card {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 2px solid var(--c-shadow);
+    border-radius: 4px;
+}
+
+#plans .card-header {
+    border-bottom: 2px solid var(--c-shadow);
+    padding: .6rem;
+    text-align: center;
+}
+
+#plans .col-4 .card-main,
+#plans .col-4 .card-footer 
+{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-basis: 420px;
+}
+
+
+#plans .product_price {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#plans .card-main ul,
+#plans .card-footer ul 
+{
+    flex-grow: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    line-height: 1.2rem;
+}
+
+
+#plans .card-main li,
+#plans .card-footer li 
+{
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+    flex-basis: 1.5rem;
+    padding: 0 .25rem;
+}
+
+#plans .card-main i,
+#plans .card-footer i 
+{
+    margin-right: .5rem;
+    /* margin-left: .5rem; */
+}
+
+#plans .col-4 .card-main button {
+    flex-basis: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+#plans .buy_now_link {
+    padding-bottom: .5rem;
+}
+
+#plans .card hr {
+    width: 30%;
+
+    margin-left: 1.5rem;
+
+    border: 0;
+    border-bottom: 2px solid var(--c-shadow);
+
+}
+
+#plans .card-footer {
+    flex-basis: 350px;
+    padding-top: 2rem;
+}
+
+#plans .card-footer ul {
+    margin-top: .5rem;
+}
+#plans .card-footer li {
+    flex-grow: 0;
+    margin-bottom: 1rem;
+}
+
+#plans .col-12 {
+    padding: 1rem;
+    margin-left: -1rem;
+}
+
+#plans .col-12 .card-main {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+}
+
+#plans .left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+#plans .right {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+
+
+/* #endregion plans */
+
 
 #clients {
     background-color: var(--c-secondary);
