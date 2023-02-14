@@ -273,6 +273,16 @@ body {
     border: none;
     padding: .5rem 1rem;
     font-family: var(--ff-opensans);
+    cursor: pointer;
+}
+
+.secondary-btn {
+    color: var(--c-dark);
+    background-color: transparent;
+    border: 1px solid var(--c-dark);
+    padding: .5rem 1rem;
+    font-family: var(--ff-opensans);
+    cursor: pointer;
 }
 /* #endregion utilities */
 
@@ -489,6 +499,31 @@ body {
 
 /* #endregion plans */
 
+/* #region meet_partners_banner */
+
+#banner_meet_partners .col-8,
+#banner_meet_partners .col-4 
+{
+    padding: 2.5rem;
+    padding-left: 0;
+}
+
+#banner_meet_partners .col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+#banner_meet_partners .col-4 h2 {
+    margin-top: 3rem;
+}
+
+#banner_meet_partners .col-8 img {
+    width: 100%;
+}
+
+/* #endregion meet_partners_banner */
 
 #clients {
     background-color: var(--c-secondary);
