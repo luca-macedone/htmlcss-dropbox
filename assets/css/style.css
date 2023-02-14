@@ -37,6 +37,9 @@ body {
     font-family: var(--ff-opensans);
 }
 
+img {
+    max-width: 100%;
+}
 /* #endregion common */
 
 /* #region debug */
@@ -239,7 +242,7 @@ body {
     font-weight: 400;
 }
 
-.text-sml {
+.text-sm {
     font-size: .8rem;
 }
 
@@ -524,6 +527,17 @@ body {
 }
 
 /* #endregion meet_partners_banner */
+
+/* #region functionalities */
+
+#functionalities .col-4 {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* #endregion functionalities */
 
 #clients {
     background-color: var(--c-secondary);
