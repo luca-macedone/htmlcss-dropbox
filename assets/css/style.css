@@ -20,6 +20,7 @@
     --c-secondary: #add0eb;
     --c-special: #6a012b;
     --c-shadow: #ecedee;
+    --c-muted: #b3b3b4;
     /* Brand Colors */
     --cb-designit-a: #95d495;
     --cb-designit-b: #cbebcb;
@@ -211,7 +212,7 @@ img {
 }
 
 .container-big {
-    width: 96%;
+    width: 98%;
     max-width: 1280px;
     margin: auto;
 }
@@ -279,6 +280,18 @@ img {
     margin-bottom: 4rem;
 }
 
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
 /* #endregion margin_and_padding */
 
 /* #region font_manipulation */
@@ -336,7 +349,7 @@ img {
 }
 
 .color-muted {
-    color: var(--c-shadow);
+    color: var(--c-muted);
 }
 
 .border-color-des-b {
@@ -416,6 +429,7 @@ img {
     top: 0;
     left: 0;
     z-index: 500;
+    /* box-shadow: 0 0 8px var(--c-shadow); */
 }
 
 #app_header .logo {
@@ -455,6 +469,7 @@ img {
     width: 90%;
     font-size: 58px;
     text-align: start;
+    margin-top: 3rem;
 }
 
 #jumbo-content {
@@ -463,16 +478,19 @@ img {
     gap: 2rem;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
 }
 
 #jumbo-content i {
     margin-top: 1rem;
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
 }
 
 .jumbo_img {
-    /* width: 660px; */
     position: relative;
-    bottom: -4.5rem;
+    bottom: -5rem;
     right: 0;
 }
 
@@ -726,8 +744,6 @@ img {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -753,23 +769,32 @@ img {
     width: 42%;
 }
 
-#clients .call-to-business {
+/* #endregion clients */
+
+/* #region call_to_business */
+
+#call_to_business_banner {
+    background-color: var(--c-secondary);
+}
+#call_to_business_banner .call-to-action {
     padding: 6rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    
 }
 
-#clients .call-to-business h2 {
+#call_to_business_banner .call-to-action h2 {
     width: 30%;
 }
 
-#clients .call-to-business button {
+#call_to_business_banner .call-to-action button {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-/* #endregion clients */
+
+/* #endregion call_to_business */
 
 /* #region questions */
 
@@ -823,6 +848,7 @@ img {
 }
 
 #app_footer .horizontal-line {
+    border-color: var(--c-muted);
     width: 10%;
 }
 
@@ -836,12 +862,20 @@ img {
     margin: .8rem 0;
 }
 
+#app_footer .column .no-decor:hover {
+    text-decoration: underline;
+}
+
 #app_footer .column h5 {
     margin-bottom: 1.6rem;
 }
 
 #app_footer .col-12 {
     margin: 2rem 0;
+}
+
+#app_footer .col-12 span {
+    cursor: pointer;
 }
 
 #app_footer .col-12 i:first-child {
