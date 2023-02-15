@@ -451,6 +451,10 @@ img {
     padding: .5rem;
 }
 
+#app_header .bottom-border {
+    transition: .25s all linear;
+}
+
 #app_header .bottom-border:hover {
     border-bottom: 2px solid var(--c-primary);
 }
@@ -512,6 +516,16 @@ img {
 
 #plans .billing_choice input {
     vertical-align: middle;
+    appearance: none;
+    border: 2px solid var(--c-muted);
+    transition: .2s all linear;
+    width: 1rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+#plans .billing_choice input:checked {
+    border: 4px solid var(--c-primary);
 }
 
 #plans .billing_choice label {
