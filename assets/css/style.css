@@ -33,6 +33,10 @@
     --cb-clear_channel_outdoor: #ffd600;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--ff-opensans);
 }
@@ -184,6 +188,14 @@ img {
     text-decoration: none;
 }
 
+.bottom-border {
+    border-bottom: 2px solid var(--c-lighter);
+}
+
+.box-border {
+    border: .8rem solid;
+}
+
 /* #region containers_and_boxes */
 
 .container-sml {
@@ -323,6 +335,14 @@ img {
     color: var(--c-special);
 }
 
+.color-muted {
+    color: var(--c-shadow);
+}
+
+.border-color-des-b {
+    border-color: var(--cb-designit-b);
+}
+
 .bg-b-designit-a {
     background-color: var(--cb-designit-a);
 }
@@ -408,7 +428,17 @@ img {
     display: flex;
     align-items: center;
     gap: 2rem;
-    margin-bottom: .5rem;
+}
+
+#app_header .list-unstiled li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+#app_header .bottom-border:hover {
+    border-bottom: 2px solid var(--c-primary);
 }
 /* #endregion app_header */
 
@@ -419,6 +449,12 @@ img {
 #jumbotron {
     background-color: var(--c-secondary);
     padding: 1rem 1rem 0;
+}
+
+#jumbo-title h1 {
+    width: 90%;
+    font-size: 58px;
+    text-align: start;
 }
 
 #jumbo-content {
@@ -445,15 +481,22 @@ img {
 
 /* #region plans */
 
-.billing_choice {
-    padding: 2rem 1rem 2rem 0;
+#plans {
+    margin-top: 8rem;
 }
 
-.billing_choice input {
+#plans .billing_choice {
+    padding: 2rem 1rem 2rem 0;
+    border: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#plans .billing_choice input {
     vertical-align: middle;
 }
 
-.billing_choice label {
+#plans .billing_choice label {
     margin-left: .25rem;
 }
 
@@ -515,7 +558,7 @@ img {
     justify-content: flex-start;
     align-items: flex-start;
 
-    line-height: 1.2rem;
+    line-height: 1.25rem;
 }
 
 
@@ -527,6 +570,7 @@ img {
     flex-grow: 1;
     flex-basis: 1.5rem;
     padding: 0 .25rem;
+    margin-bottom: 1rem;
 }
 
 #plans .card-main i,
@@ -810,5 +854,3 @@ img {
 /* #endregion app_footer */
 
 /* #endregion main */
-
-/* TODO: refactor utilities, modificare size jumbotron */

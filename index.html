@@ -23,15 +23,17 @@
                 <div class="col-6">
                     <ul class="list-unstiled flex-start-main">
                         <li>
-                            <img class="logo" src="./assets/img/logo-small.png" alt="Dropbox Logo">
+                            <a href="#">
+                                <img class="logo" src="./assets/img/logo-small.png" alt="Dropbox Logo">
+                            </a>
                         </li>
-                        <li>
+                        <li class="bottom-border">
                             <a class="text-sm color-dark no-decor" href="#">Perchè Dropbox</a>
                         </li>
-                        <li>
+                        <li class="bottom-border">
                             <a class="text-sm color-dark no-decor" href="#">Funzioni</a>
                         </li>
-                        <li>
+                        <li class="bottom-border">
                             <a class="text-sm color-dark no-decor" href="#">Piani e Prezzi</a>
                         </li>
                     </ul>
@@ -39,13 +41,13 @@
                 <!-- /.col-6 -->
                 <div class="col-6">
                     <ul class="list-unstiled flex-end-main">
-                        <li>
+                        <li class="bottom-border">
                             <a class="text-sm color-dark no-decor" href="#">Supporto</a>
                         </li>
-                        <li>
+                        <li class="bottom-border">
                             <a class="text-sm color-dark no-decor" href="#">Contatta l'ufficio vendite</a>
                         </li>
-                        <li>
+                        <li class="bottom-border">
                             <a class="text-sm color-dark no-decor" href="#">Accedi</a>
                         </li>
                         <li>
@@ -88,7 +90,9 @@
                                     Annulla in qualsiasi momento
                                 </p>
 
-                                <i class="fa-solid fa-arrow-down fa-2x"></i>
+                                <a href="#plans" class="color-dark">
+                                    <i class="fa-solid fa-arrow-down fa-2x"></i>
+                                </a>
                             </div>
                             <!-- /.col-4 -->
                             <div class="col-8">
@@ -105,20 +109,33 @@
             <!-- /.container-med -->
         </section>
         <!-- /#jumbotron -->
-        <section class="my-4" id="plans">
+        <section id="plans">
             <div class="container-sml">
                 <div class="row">
                     <div class="col-12 padding-y-2">
                         <h2>Trova il piano business che fa per te</h2>
                         <div class="row">
-                            <div class="billing_choice">
+                            <form class="billing_choice">
+                                <div class="input">
+                                    <input type="radio" id="monthly" name="billing" checked>
+                                    <label for="monthl" class="text-sml color-dark">Fatturazione mensile</label>
+                                </div>
+                                <!-- /.input -->
+                                <div class="input">
+                                    <input type="radio" id="annual" name="billing">
+                                    <label for="annual" class="text-sml color-dark">Fatturazione annuale</label>
+                                </div>
+                                <!-- /.input -->
+                            </form>
+                            <!-- /.billing_choice -->
+                            <!-- <div class="billing_choice">
                                 <input type="radio" id="monthly" checked>
                                 <label for="monthl" class="text-sml color-dark">Fatturazione mensile</label>
                             </div>
                             <div class="billing_choice">
                                 <input type="radio" id="annual">
                                 <label for="annual" class="text-sml color-dark">Fatturazione annuale</label>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-4">
@@ -133,7 +150,7 @@
                                         <!-- /product_title -->
                                         <div class="product_price">
                                             <span class="text-sm text-bold">€ 12,00</span>
-                                            <span class="text-sm">/mese</span>
+                                            <span class="text-sm color-muted">/mese</span>
                                         </div>
                                         <!-- /.product_price -->
                                         <ul class="list-unstiled">
@@ -196,7 +213,7 @@
                                         <!-- /product_title -->
                                         <div class="product_price">
                                             <span class="text-sm text-bold">€ 18,00</span>
-                                            <span class="text-sm">/utente/mese</span>
+                                            <span class="text-sm color-muted">/utente/mese</span>
                                         </div>
                                         <!-- /.product_price -->
 
@@ -272,7 +289,7 @@
                                         <!-- /product_title -->
                                         <div class="product_price">
                                             <span class="text-sm text-bold">Contattaci</span>
-                                            <span class="text-sm">-</span>
+                                            <span class="text-sm color-muted">-</span>
                                         </div>
                                         <!-- /.product_price -->
                                         <ul class="list-unstiled">
@@ -305,7 +322,7 @@
                                     <div class="card-footer">
                                         <h4>Punti salienti del piano</h4>
                                         <ul class="list-unstiled">
-                                            <li class="text-sml">
+                                            <li class="text-sm">
                                                 <i class="fa-solid fa-check color-primary"></i>
                                                 Cartelle offline su dispositivi mobili
                                             </li>
@@ -515,7 +532,7 @@
                         <h2 class="text-bigger">Più di 500.000 team
                             utilizzano Dropbox
                             Business</h2>
-                        <a href="#">Scopri di più sui nostri clienti</a>
+                        <a href="#" class="color-primary">Scopri di più sui nostri clienti</a>
                     </div>
                     <!-- /.col-12 -->
                 </div>
@@ -528,7 +545,7 @@
             <div class="container-big">
                 <div class="row">
                     <div class="col-4">
-                        <div class="brand-box bg-b-designit-a">
+                        <div class="brand-box bg-b-designit-a box-border border-color-des-b">
                             <div class="brand-logo inverted">
                                 <img src="./assets/img/designit.svg" alt="Designit">
                             </div>
