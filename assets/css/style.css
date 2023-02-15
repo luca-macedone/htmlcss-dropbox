@@ -200,6 +200,14 @@ img {
     border: .8rem solid;
 }
 
+.link {
+    transition: .25s all linear;
+}
+
+.link:hover {
+    color: var(--c-secondary);
+}
+
 /* #region containers_and_boxes */
 
 .container-sml {
@@ -227,6 +235,10 @@ img {
     flex-wrap: wrap;
 }
 
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
 .col-4 {
     width: calc(100% / 12 * 4);
 }
@@ -237,6 +249,10 @@ img {
 
 .col-8 {
     width: calc(100% / 12 * 8);
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
 }
 
 .col-12 {
@@ -481,7 +497,6 @@ img {
     top: 0;
     left: 0;
     z-index: 500;
-    /* box-shadow: 0 0 8px var(--c-shadow); */
 }
 
 #app_header .logo {
@@ -501,6 +516,7 @@ img {
     display: flex;
     align-items: center;
     padding: .5rem;
+    transition: .25s all linear;
 }
 
 #app_header .bottom-border {
@@ -511,6 +527,25 @@ img {
     border-bottom: 2px solid var(--c-primary);
 }
 
+#app_header .list-unstiled li:hover a {
+    color: var(--c-primary);
+}
+
+.container {
+    min-height: 100px;
+}
+
+#app_header .dropdown_menu {
+    width: 50%;
+}
+
+#app_header .dropdown_menu .list-unstiled {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #95d495;
+}
 /* #endregion app_header */
 
 /* #region app_main */
@@ -943,20 +978,41 @@ img {
     margin-bottom: 1.6rem;
 }
 
-#app_footer .col-12 {
+#app_footer .col-10 {
     margin: 2rem 0;
 }
 
-#app_footer .col-12 span {
+#app_footer .col-10 span {
     cursor: pointer;
 }
 
-#app_footer .col-12 i:first-child {
+#app_footer .col-10 i:first-child {
     margin-right: .5rem;
 }
 
-#app_footer .col-12 i:last-child {
+#app_footer .col-10 i:last-child {
     margin-left: .5rem;
+}
+
+#app_footer .col-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#app_footer .col-2 a {
+    transition: .25s all linear;
+    margin-right: .5rem;
+}
+
+#app_footer .col-2 i {
+    vertical-align: sub;
+    margin-left: .25rem;
+}
+
+#app_footer .col-2 a:hover,
+#app_footer .col-2 a:hover i {
+    color: var(--c-lighter);
 }
 
 /* #endregion app_footer */
