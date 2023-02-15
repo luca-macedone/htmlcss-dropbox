@@ -21,6 +21,7 @@
     --c-special: #6a012b;
     --c-shadow: #ecedee;
     --c-muted: #b3b3b4;
+    --c-hover-light: #ffffff29;
     /* Brand Colors */
     --cb-designit-a: #95d495;
     --cb-designit-b: #cbebcb;
@@ -402,6 +403,12 @@ img {
     padding: .5rem 1rem;
     font-family: var(--ff-opensans);
     cursor: pointer;
+    transition: .25s all linear;
+}
+
+.primary-btn:hover {
+    color: var(--c-dark);
+    filter: opacity(.85);
 }
 
 .secondary-btn {
@@ -411,6 +418,13 @@ img {
     padding: .5rem 1rem;
     font-family: var(--ff-opensans);
     cursor: pointer;
+    transition: .25s all linear;
+}
+
+.secondary-btn:hover {
+    background-color: var(--c-hover-light);
+    color: var(--c-primary);
+    border-color: var(--c-primary);
 }
 
 .light-btn {
@@ -420,9 +434,41 @@ img {
     padding: .5rem 1rem;
     font-family: var(--ff-opensans);
     cursor: pointer;
+    transition: .25s all linear;
+}
+
+.light-btn:hover {
+    color: var(--c-light);
+    background-color: var(--c-special);
 }
 
 /* #endregion buttons */
+
+/* #region animations */
+
+@keyframes animation_jump {
+    0% {
+        bottom: 0;
+    }
+
+    33% {
+        bottom: 1.8rem;
+    }
+
+    55% {
+        bottom: 0;
+    }
+
+    75% {
+        bottom: 1.5rem;
+    }
+    
+    100% {
+        bottom: 0;
+    }
+}
+
+/* #endregion animations */
 
 /* #endregion utilities */
 
@@ -503,6 +549,11 @@ img {
     position: relative;
     bottom: -5rem;
     right: 0;
+}
+
+#jumbo-content:hover i {
+    animation: animation_jump 1.8s linear;
+    animation-iteration-count: 2;
 }
 
 
@@ -698,6 +749,11 @@ img {
 /* #endregion meet_partners_banner */
 
 /* #region functionalities */
+
+#functionalities h2 {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 #functionalities .col-4 {
     padding: 1.5rem;
