@@ -45,6 +45,7 @@ body {
 img {
     max-width: 100%;
 }
+
 /* #endregion common */
 
 /* #region debug */
@@ -134,7 +135,7 @@ img {
 }
 
 .debug #clients .col-4 {
-   height: 600px;
+    height: 600px;
 }
 
 .debug #clients .col-12 {
@@ -160,6 +161,7 @@ img {
 .debug #app_footer .row:last-child {
     height: 150px;
 }
+
 /* #endregion debug */
 
 /* #region utilities */
@@ -185,7 +187,7 @@ img {
     filter: invert(1);
 }
 
-.no-decor{
+.no-decor {
     text-decoration: none;
 }
 
@@ -292,6 +294,7 @@ img {
 .mb-4 {
     margin-bottom: 4rem;
 }
+
 /* #endregion margin_and_padding */
 
 /* #region font_manipulation */
@@ -359,12 +362,15 @@ img {
 .bg-b-designit-a {
     background-color: var(--cb-designit-a);
 }
+
 .bg-b-asu {
     background-color: var(--cb-arizona_uni);
 }
+
 .bg-b-fu {
     background-color: var(--cb-florida_uni);
 }
+
 .bg-b-topps {
     background-color: var(--cb-topps);
 }
@@ -458,6 +464,7 @@ img {
 #app_header .bottom-border:hover {
     border-bottom: 2px solid var(--c-primary);
 }
+
 /* #endregion app_header */
 
 /* #region app_main */
@@ -536,13 +543,11 @@ img {
     padding: 1rem;
 }
 
-#plans .col-4:first-child 
-{
+#plans .col-4:first-child {
     margin-left: -1rem;
 }
 
-#plans .col-4:last-child
-{
+#plans .col-4:last-child {
     margin-right: -1rem;
 }
 
@@ -564,8 +569,7 @@ img {
 }
 
 #plans .col-4 .card-main,
-#plans .col-4 .card-footer 
-{
+#plans .col-4 .card-footer {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -581,8 +585,7 @@ img {
 }
 
 #plans .col-4 .card-main ul,
-#plans .col-4 .card-footer ul 
-{
+#plans .col-4 .card-footer ul {
     flex-grow: 2;
 
     display: flex;
@@ -595,8 +598,7 @@ img {
 
 
 #plans .card-main li,
-#plans .card-footer li 
-{
+#plans .card-footer li {
     display: flex;
     align-items: baseline;
     flex-grow: 1;
@@ -606,8 +608,7 @@ img {
 }
 
 #plans .card-main i,
-#plans .card-footer i 
-{
+#plans .card-footer i {
     margin-right: .5rem;
     /* margin-left: .5rem; */
 }
@@ -634,6 +635,7 @@ img {
 #plans .card-footer ul {
     margin-top: .5rem;
 }
+
 #plans .card-footer li {
     flex-grow: 0;
     margin-bottom: 1rem;
@@ -673,8 +675,7 @@ img {
 /* #region meet_partners_banner */
 
 #banner_meet_partners .col-8,
-#banner_meet_partners .col-4 
-{
+#banner_meet_partners .col-4 {
     padding: 2.5rem;
     padding-left: 0;
 }
@@ -707,12 +708,12 @@ img {
 
 #functionalities .col-4:first-child,
 #functionalities .col-4:nth-child(4) {
-    margin-left: -1.5rem;   
+    margin-left: -1.5rem;
 }
 
 #functionalities .col-4:last-child,
 #functionalities .col-4:nth-child(3) {
-    margin-right: -1.5rem;   
+    margin-right: -1.5rem;
 }
 
 /* #endregion functionalities */
@@ -790,13 +791,14 @@ img {
 #call_to_business_banner {
     background-color: var(--c-secondary);
 }
+
 #call_to_business_banner .call-to-action {
     padding: 6rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    
+
 }
 
 #call_to_business_banner .call-to-action h2 {
@@ -852,6 +854,7 @@ img {
 #questions .question:hover .visible {
     display: none;
 }
+
 /* #endregion questions */
 
 /* #endregion app_main */
@@ -899,6 +902,7 @@ img {
 #app_footer .col-12 i:last-child {
     margin-left: .5rem;
 }
+
 /* #endregion app_footer */
 
 /* #endregion main */
